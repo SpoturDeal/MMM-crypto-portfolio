@@ -6,12 +6,12 @@ Module.register('MMM-crypto-portfolio', {
                    {name:'ripple',          portf: 1.688014},
                    {name:'litecoin',        portf: 0.382885},
                    {name:'ethereum',        portf: 3.771212}],
-        conversion: 'EUR',
+        conversion: 'USD',
         showUSD: false,
         showPortfolio: true,
         showAssets: true,
         showAgainstBTC:true,
-        displayLongNames: false,
+        displayLongNames: true,
         headers: [],
         displayType: 'detail',
         showGraphs: false,
@@ -218,18 +218,19 @@ Module.register('MMM-crypto-portfolio', {
             } else {
                 name = currentCurrency.symbol
             }
+
             marketCapMyWallet += parseFloat(currentCurrency.market_cap_eur);
             var cPrice= currentCurrency.price.replace("€", "").trim();
-            cPrice= parseFloat(cPrice.replace(",","."));
-            myTotalAsset += cPrice * this.config.currency[i].portf
-            var myWallet='€ '+(this.config.currency[i].portf * cPrice ).toFixed(2);
+            myTotalAsset += currentCurrency.clean_price * this.config.currency[i].portf
+            //var myWallet='€ '+(this.config.currency[i].portf * cPrice ).toFixed(5);
+			var myWallet='€ '+(this.config.currency[i].portf * currentCurrency.clean_price ).toFixed(2);
             
             var tdValues = [
                 name,
                 currentCurrency.price
             ]
             if (this.config.showAgainstBTC){
-                tdValues.push('<i class="fa fa-bitcoin"></i> '+currentCurrency.price_btc)
+                tdValues.push(currentCurrency.price_btc)
             }
             if (this.config.showAssets) {
                 tdValues.push(myWallet);
@@ -264,7 +265,7 @@ Module.register('MMM-crypto-portfolio', {
         if (this.config.showAssets){
             // add tr for totals 
             var trWrapper = document.createElement('tr')
-            trWrapper.className = 'currency'
+            trWrapper.className = 'summary'  //was currency
             var tdWrapper = document.createElement('td')
             tdWrapper.style.textAlign="left";
             tdWrapper.innerHTML = this.translate('TOTAL');
@@ -334,17 +335,21 @@ Module.register('MMM-crypto-portfolio', {
         var digitsBeforeDecimalPoint = Math.floor(unroundedPrice).toString().length
         var requiredDigitsAfterDecimalPoint = Math.max(this.config.significantDigits - digitsBeforeDecimalPoint, 2)
         var price = this.roundNumber(unroundedPrice, requiredDigitsAfterDecimalPoint)
+        var cleanPrice = price;
         console.log("config.language: " + config.language);
 
         // add the currency string
         apiResult['price'] = price.toLocaleString(config.language, { style: 'currency', currency: this.config.conversion })
+        apiResult['clean_price']=cleanPrice;
         if (rightCurrencyFormat != 'usd' && this.config.showUSD) {
             // rounding the priceUSD
             var unroundedPriceUSD = apiResult['price_usd']
             var digitsBeforeDecimalPointUSD = Math.floor(unroundedPriceUSD).toString().length
             var requiredDigitsAfterDecimalPointUSD = Math.max(this.config.significantDigits - digitsBeforeDecimalPointUSD, 2)
             var priceUSD = this.roundNumber(unroundedPriceUSD, requiredDigitsAfterDecimalPointUSD)
-            apiResult['price'] += ' / ' + priceUSD.toLocaleString(config.language, { style: 'currency', currency: 'USD' })
+            var cleanPrice = priceUSD;
+            apiResult['clean_price_usd'] = cleanPrice;
+            apiResult['price'] += ' / ' + priceUSD.toFixed(2).toLocaleString(config.language, { style: 'currency', currency: 'USD' })
         }
 
         return apiResult
