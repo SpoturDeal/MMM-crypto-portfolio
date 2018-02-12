@@ -1,5 +1,6 @@
 .currency {
     color: white;
+	font-size: medium;
 }
 
 .MMM-crypto-portfolio > tr {
@@ -7,7 +8,7 @@
 }
 
 .MMM-crypto-portfolio > tr > td, .MMM-crypto-portfolio > tr > th {
-    padding-left: 4px;
+    padding-left: 32px;
     padding-bottom: 5px;
 }
 
@@ -22,6 +23,7 @@
     border-bottom: 1px solid #666;
     padding-bottom: 5px;
     margin-bottom: 10px;
+	font-size: medium;
 }
 .MMM-crypto-portfolio *:first-child {
     padding-left: 0;
