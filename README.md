@@ -33,7 +33,7 @@ I have adapted it to show the portfolio and assets.
 Here is an example of an entry in `config.js`
 ```
 {
-	module: "MMM-cryptocurrency",
+	module: "MMM-crypto-portfolio",
 	position: "top_right",
 	config: {          // this is changed from Mateo`s Version
 		           // enter currency as pairs (name is the coin and portf how much you own)
