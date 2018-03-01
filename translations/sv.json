@@ -1,0 +1,16 @@
+{
+  "CURRENCY" : "Valuta",
+  "PRICE" : "Pris",
+  "IMAGE" : "Bild",
+  "NOTFOUND" : "Hittas ej",
+  "CHANGE" : "% Förändring",
+  "TOTAL" : "Totalt",
+  "MARKCAP" : "Marknadsvärde",
+  "ONEHOUR" : "1 timme",
+  "ONEDAY" : "1 dag",
+  "ONEWEEK" : "1 vecka",
+  "ASSETS" : "Tillgångar",
+  "PORTFOLIO" : "Tillgångar",
+  "TOTALASSETS" : "Totala tillgångar",
+  "TOTALGLOBALCAP" : "Totalt marknadsvärde"
+}
