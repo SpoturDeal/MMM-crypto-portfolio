@@ -105,6 +105,8 @@ Data provided by <a href="https://coinmarketcap.com/">coinmarketcap.com</a>.
 
 <a href="https://fontawesome.com/v4.7.0/icons/">Fontawesome</a> Providing great graphical fonts.
 
+<a href="https://github.com/Caziopei">Caziopei</a> For Swedish translation. 
+
 The MIT License (MIT)
 =====================
 
