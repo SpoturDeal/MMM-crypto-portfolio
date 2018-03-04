@@ -471,7 +471,7 @@ Module.register('MMM-crypto-portfolio', {
                 tdGraphWrapper.style.padding = "0px";
                 if (this.sparklineIds[apiResult[j].id]) {
                     var graph = document.createElement('img')
-                    graph.src = 'https://files.coinmarketcap.com/generated/sparklines/' + this.sparklineIds[apiResult[j].id] + '.png?cachePrevention=' + Math.random()
+                    graph.src = 'https://s2.coinmarketcap.com/generated/sparklines/' + this.sparklineIds[apiResult[j].id] + '.png?cachePrevention=' + Math.random()
                     graph.style.maxWidth = "164px";
                     graph.style.maxHeight = "48";
                     graph.color = 'yellow';
