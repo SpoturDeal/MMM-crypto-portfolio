@@ -147,7 +147,8 @@ Module.register('MMM-crypto-portfolio', {
         wax: 2300,
         zcash: 1437,
         zclassic: 1447,
-        zcoin: 1414
+        zcoin: 1414,
+        ravencoin: 2577
     },
 
     start: function() {
