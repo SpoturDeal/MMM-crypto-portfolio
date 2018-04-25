@@ -8,6 +8,8 @@ I have adapted it to show the portfolio and assets.
 1. Navigate into your MagicMirror's `modules` folder and execute `git clone https://github.com/spoturdeal/MMM-crypto-portfolio.git`.
 2. Add the module inside `config.js` placing it where you prefer ;)
 
+## Version
+25th April 2018 Added Feathercoin and Nexus Logos
 
 ## Config
 
