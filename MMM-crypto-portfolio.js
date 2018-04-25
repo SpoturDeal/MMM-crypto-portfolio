@@ -86,6 +86,7 @@ Module.register('MMM-crypto-portfolio', {
         ethos: 1817,
         'experience-points': 1367,
         factom: 1087,
+        feathercoin: 8,
         funfair: 1757,
         gas: 1785,
         'golem-network-tokens': 1455,
