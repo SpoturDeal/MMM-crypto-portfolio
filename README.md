@@ -32,6 +32,10 @@ I have adapted it to show the portfolio and assets.
 |`coloredLogos`| Toggles white or colored logos `displayType: logo`. <br> **Type:** `boolean` <br> **Default** <i>false</i> |
 |`fontSize`| Dimension of price text. You can specify pixel values, em values or keywords.<br> **Type:** `string` <br>**Options:** `xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `xx-large` <br> **Default** <i>small</i> |
 |`limit`| Number of currencies to download, according to CoinMarketCap ranking. Increase this value only if you cannot display a currency. <br> **Type:** `string` <br> **Default** <i>200</i> |
+|`showLabels`| Show text labels. <br> **Type:** `boolean` <br>**Options:** true, false <br>  **Default** <i>true</i> |
+|`logoPosition`| Set the position for the logo. <br> **Type:** `string` <br>**Options:** `front`, `middle`, `back`<br>  **Default** <i>`front`</i> |
+|`graphPosition`|Set the position for the graphic. <br> **Type:** `string` <br>**Options:** `front`, `back`<br> **Default** <i>`back`</i> |
+
 
 Here is an example of an entry in `config.js`
 ```
