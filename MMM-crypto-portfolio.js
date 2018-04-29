@@ -26,7 +26,7 @@ Module.register('MMM-crypto-portfolio', {
         coloredLogos: false,
         fontSize: 'small',
         limit: '200',
-        showLabels: true,
+        showLabels: true,       // true or false
         logoPosition: "front",  // option front, middle, back
         graphPosition: "back",  // option front, back
     },
@@ -511,7 +511,7 @@ Module.register('MMM-crypto-portfolio', {
         return wrapper
     },
     labelVisible:function(lbl){
-       return (this.config.showLabels===true?'lbl':'');
+       return (this.config.showLabels===true?lbl:'');
     },
 
     /**
