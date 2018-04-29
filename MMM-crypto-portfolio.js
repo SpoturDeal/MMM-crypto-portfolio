@@ -503,7 +503,7 @@ Module.register('MMM-crypto-portfolio', {
         // use the total value of the assets as set in config
         if (this.config.showAssets){
             var tr = document.createElement('tr');
-            tr.appendChild(this.setTd(this.translate("TOTALASSETS"),"pricedetail"));
+            tr.appendChild(this.setTd(this.labelVisible(this.translate("TOTALASSETS")),"pricedetail"));
             tr.appendChild(this.setTd(this.localCurrencyFormat(myTotalAsset),"pricedetail","right"));
             table.appendChild(tr);
         }
