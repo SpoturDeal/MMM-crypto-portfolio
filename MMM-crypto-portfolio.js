@@ -415,6 +415,7 @@ Module.register('MMM-crypto-portfolio', {
         // use the selected coins
         for (var j = 0; j < apiResult.length; j++) {
             //make row for table the table top row consists of td[1] icon, td[2] amounts in table, td[3]Sprkline graphic
+            var cntTD=0;
             var tr = document.createElement('tr')
             tr.className = 'icon-row'
             // Set the logo
@@ -450,6 +451,7 @@ Module.register('MMM-crypto-portfolio', {
             }
             if (this.config.showGraphs && this.config.graphPosition=="front") {
                 tr.appendChild(tdGraphWrapper)
+                cntTD++;
             }
             var tdPriceWrapper = document.createElement('td');
             // ts table amount
@@ -485,8 +487,10 @@ Module.register('MMM-crypto-portfolio', {
             valuesText+="</table>";
             if (this.config.logoPosition == "front"){
                 tr.appendChild(tdLogoWrapper);
+                cntTD++;
             }
             tr.appendChild(this.setTd(valuesText,'icon-row'));
+            cntTD++;
             if (this.config.logoPosition == "middle"){
                 tr.appendChild(tdLogoWrapper);
             }
@@ -503,7 +507,9 @@ Module.register('MMM-crypto-portfolio', {
         // use the total value of the assets as set in config
         if (this.config.showAssets){
             var tr = document.createElement('tr');
-            tr.appendChild(this.setTd(this.labelVisible(this.translate("TOTALASSETS")),"pricedetail"));
+            if (cntTD>1) {
+                tr.appendChild(this.setTd(this.translate("TOTALASSETS"),"pricedetail"));
+            }
             tr.appendChild(this.setTd(this.localCurrencyFormat(myTotalAsset),"pricedetail","right"));
             table.appendChild(tr);
         }
