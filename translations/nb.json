@@ -1,0 +1,16 @@
+{
+  "CURRENCY": "Valuta",
+  "PRICE": "Pris",
+  "IMAGE": "Bilde",
+  "NOTFOUND": "ikke funnet",
+  "CHANGE": "% Endring",
+  "TOTAL": "Totalt",
+  "MARKCAP":"Total markedsverdi",
+  "ONEHOUR":"1 time",
+  "ONEDAY": "1 dag ",
+  "ONEWEEK": "1 uke",
+  "ASSETS": "Eiendeler",
+  "PORTFOLIO":"Portefølje",
+  "TOTALASSETS":"Totale eiendeler",
+  "TOTALGLOBALCAP":"Total markedsverdi"
+}
