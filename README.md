@@ -60,7 +60,7 @@ Here is an example of an entry in `config.js`
 		showGraphs: true,
 		limit:100               // increase if your coin doesn't appear ther are more then 1000 
 	}
-}
+},  // Don't forget this comma !
 ```
 
 ## Screenshots
