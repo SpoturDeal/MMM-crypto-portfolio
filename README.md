@@ -115,6 +115,8 @@ Data provided by <a href="https://coinmarketcap.com/">coinmarketcap.com</a>.
 
 <a href="https://github.com/kurtern84">kurtern84</a> For Norwegian translation.
 
+<a href="https://github.com/darkniki">darkniki</a> For Russian translation.
+
 The MIT License (MIT)
 =====================
 
