@@ -552,7 +552,8 @@ Module.register('MMM-crypto-portfolio', {
             de: 'translations/de.json',
             it: 'translations/it.json',
             nl: 'translations/nl.json',
-            sv: 'translations/sv.json'
+            sv: 'translations/sv.json',
+            ru: 'translations/ru.json'
         }
     },
     formatMoney: function(n,c, d, t){
