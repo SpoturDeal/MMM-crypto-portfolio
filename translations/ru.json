@@ -1,0 +1,16 @@
+{
+  "CURRENCY": "Валюта",
+  "PRICE": "Цена",
+  "IMAGE": "Изображение",
+  "NOTFOUND": "не найдено",
+  "CHANGE": "&#916;",
+  "TOTAL": "Всего",
+  "MARKCAP":"Рыночная капитализация",
+  "ONEHOUR":"1 час",
+  "ONEDAY": "1 день ",
+  "ONEWEEK": "1 неделя",
+  "ASSETS": "Активы",
+  "PORTFOLIO":"Портфолио",
+  "TOTALASSETS":"Всего активов",
+  "TOTALGLOBALCAP":"Рыночная капитализация"
+}
