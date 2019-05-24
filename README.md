@@ -17,7 +17,7 @@ I have adapted it to show the portfolio and assets.
 |Option|Description|
 |---|---|
 |`currency`|One or more currencies you want to display.<br>**Type:** `multidimensional array`<br>**Options:** `bitcoin, ethereum, ripple, dash, bitcoin-gold, litecoin, iota, ethereum-classic, nem, stratis, bitcoin-cash, cardano, neo`<br>**Default:** <i>[{name:'bitcoin', portf: 1.2345678},{name:'ripple',    portf: 1.688014},{name:'litecoin',  portf: 0.382885},{name:'ethereum',  portf: 3.771212}]</i>|
-|`conversion`|The currency used to convert crypto currency value.<br>**Type:** `string`<br>**Options:** `AUD, BRL, CAD, CHF, CNY, EUR, GBP, HKD, IDR, INR, JPY, KRW, MXN, RUB`<br>**Default:** <i>EUR</i>|
+|`conversion`|The currency used to convert crypto currency value.<br>**Type:** `string`<br>**Options:** `AUD, BRL, CAD, CHF, CNY, EUR, GBP, HKD, IDR, INR, JPY, KRW, MXN, RUB, USD`<br>**Default:** <i>EUR</i>|
 |`showUSD`|When using other currencies than USD. Value can also be shown in USD.<br>**Type:** `boolean`<br>**Default:** <i>false</i>|
 |`displayLongNames`| Option that show full name of the currency or the shortest version. (eg. Bitcoin/BTC ). <br> **Type** `boolean` <br> **Default** <i>false</i> |
 |`displayType`| Sets the display of the module. <br>**Type:** `string`<br>**Options:** `detail, logo, logoWithChanges`<br/>**Default:** <i>detail</i>
