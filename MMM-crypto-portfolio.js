@@ -8,7 +8,7 @@ Module.register('MMM-crypto-portfolio', {
     result: {},
     defaults: {
         currency: [{name:'bitcoin',   portf: 1.2345678},
-                   {name:'ripple',    portf: 1.688014},
+                   {name:'xrp',       portf: 1.688014},
                    {name:'litecoin',  portf: 0.382885},
                    {name:'ethereum',  portf: 3.771212}],
         conversion: 'EUR',
@@ -34,7 +34,7 @@ Module.register('MMM-crypto-portfolio', {
     sparklineIds: {
         bitcoin: 1,
         ethereum: 1027,
-        ripple: 52,
+        xrp: 52,
         litecoin: 2,
         'ethereum-classic': 1321,
         nem: 873,
