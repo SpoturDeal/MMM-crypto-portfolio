@@ -45,7 +45,7 @@ Here is an example of an entry in `config.js`
 	config: {          // this is changed from Mateo`s Version
 		           // enter currency as pairs (name is the coin and portf how much you own)
 		currency: [{name: 'bitcoin',  portf:  1.2345678},
-		           {name: 'ripple',   portf: 1.688014},
+		           {name: 'xrp',      portf: 1.688014},
                            {name: 'litecoin', portf: 0.382885},
                            {name: 'ethereum', portf: 3.771212}],
 		conversion: 'EUR',
