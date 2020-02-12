@@ -357,7 +357,7 @@ Module.register('MMM-crypto-portfolio', {
         console.log("config.language: " + config.language);
 
         // add the currency string
-        apiResult['price'] = price.toLocaleString(config.language, { style: 'currency', currency: this.config.conversion })
+        apiResult['price'] = price.toLocaleString(config.language, { style: 'currency', currency: this.config.conversion, maximumSignificantDigits: this.config.significantDigits })
         // clean prices are needed to make assets calculations
         apiResult['clean_price']=unroundedPrice;
         if (rightCurrencyFormat != 'usd' && this.config.showUSD) {
