@@ -1,4 +1,7 @@
 # MMM-crypto-portfolio
+#  Coincapmarket requires an user account and the free version has been closed
+#  a new version is not available yet
+
 A <a href="https://github.com/MichMich/MagicMirror">MagicMirror</a> module used to get real-time values of crypto currencies.
 
 This module is orginally made By Matteo Danelli, many thanks for his great work.
